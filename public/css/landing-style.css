@@ -1,0 +1,483 @@
+*,::before ,::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+
+}
+
+@font-face {
+	font-family: Sans;
+	src: url(/fonts/sans/ttf/IRANSansWeb_Light.ttf);
+}
+@font-face {
+	font-family: Sans-bold;
+	src: url(/fonts/sans/ttf/IRANSansWeb_Bold.ttf);
+}
+
+@font-face {
+	font-family: Lalezar;
+	src: url(/fonts/Lalezar-Regular.ttf);
+}
+.view {
+	display: block;float: right;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden  ;
+	position: relative;
+	background: #ffffff;
+
+}
+.text-view {
+	font-family: Sans;
+	font-size: 20px;
+	padding: 20px;
+	text-align: right;
+	color: #838383;
+	direction: rtl;
+
+	position: absolute;
+}
+.items-p {position: relative !important;	padding: 10px ;margin-top: -150px‌;margin-bottom: 20px;}
+.items-p strong:before {content: "";
+	position: absolute;
+	padding: 7px;
+	border-radius: 100%;
+	background: #F58634;
+	top:17px;
+	right:-25px;}
+.text-view strong{display: block;width: 100%;
+	font-family: Lalezar;
+	position: relative;
+	font-size: 35px;
+	color: #000000;
+
+}
+header{display: block;float: right;
+	width: 100%;
+	height: 100vh;
+	background: url("/img/landing/BG.jpg");
+	background-size: cover;
+	padding: 100px  10px ;
+	overflow: hidden  ;
+	position: relative;
+}
+.logo {margin: auto;
+	width: 100px;
+	height: 100px;
+
+
+	overflow: hidden;
+}
+.logo img{height: 100%;
+	display: block;
+	margin: auto}
+header div.title , .sub-title {margin: auto;width: 60%;padding: 20px;
+	font-family: Lalezar;
+	color: white;
+	direction: rtl;
+	font-size: 50px;
+	text-align: center;
+
+}
+.down-ic{font-size: 70px !important;color: #F58634;
+	text-align: center;width: 100%; animation: MoveUpDown 1s linear infinite;
+	position: absolute;
+	left: 0;
+	bottom: 0;}
+
+@keyframes MoveUpDown {
+	0% {
+		bottom: 0;
+	}
+	50% {
+		bottom: 20px;
+	}
+	100% {
+		bottom: 0;
+	}
+}
+
+header div.title strong{color: #F58634;
+	font-weight: 900;
+}
+.sub-title{font-family: Sans;
+	font-size: 24px;
+	position: relative;
+	z-index: 3}
+
+.app-link {
+	display: block;
+	margin: auto;
+	width: 270px;
+	height: 70px;
+	background: #F58634;
+	box-shadow: 0 5px 9px 0 #000000;
+	border-radius: 9px;
+	font-family: Sans;padding: 15px;
+	text-align: center;
+	font-size: 24px;
+	color: #0F1217;
+}
+header div.iphone {
+	margin: auto;
+	width: 20%;
+	height: 40%;
+	background: url("/img/landing/persia ticket.png");
+	background-size: 100% 100%;
+	margin-top: 80px;
+	position: absolute;
+	z-index: 2;
+	bottom: 0%;
+	left: 40%;
+}
+.gallery{position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 70vh;
+	z-index: 0;
+}
+
+.gallery img {position: absolute;}
+.gallery  img:nth-child(1) {
+	right: 40px;
+	top:40px;
+	width: 250px;
+}
+
+.gallery  img:nth-child(2) {
+	right: 40px;
+	top:200px;
+	width: 200px;
+}
+
+
+.gallery  img:nth-child(3) {
+	right: 60px;
+	top:350px;
+	width: 300px;
+}
+.gallery  img:nth-child(4) {
+	right: 340px;
+	top:220px;
+	width: 200px;
+}
+.gallery  img:nth-child(5) {
+	left: 20px;
+	top:30px;
+	width: 300px;
+}
+.gallery  img:nth-child(6) {
+	left:170px;
+	top:220px;
+	width: 200px;
+}
+
+.gallery  img:nth-child(7) {
+	left:50px;
+	bottom:-50px;
+	width: 340px;
+}
+
+.all-seen .text-view  {
+	top:40%;
+	left: 10%;
+	width: 450px}
+.all-seen img {width: 22%;position: absolute}
+
+.all-seen img:nth-child(2){
+	right:10%;
+	top:60px;
+}
+.all-seen img:nth-child(3){
+	right: 15%;
+	top:160px;
+}
+
+.tickeet-code .text-view {
+	top:30px;
+	right: 30%;
+	width: 30%;
+}
+.tickeet-code img{position: absolute}
+.tickeet-code img:nth-child(2){
+	width: 30%;
+	right: 0px;
+	top:260px;
+	z-index: 9;
+}
+.tickeet-code img:nth-child(3){
+	width: 40%;
+	left: 20%;
+	top:260px;
+}
+
+
+.place .text-view {right: 150px;
+	top:150px;
+	width: 450px}
+
+.place img{position: absolute;
+	width: 600px;
+	left: 50px;
+	top:50px;}
+
+
+.apps{background: #F58634;height: 60vh;padding: 50px}
+.text-view-apps{float: left;
+	width:  50%;
+	margin-top: 80px;
+	padding: 20px;
+	font-family: Sans;
+	font-size: 24px;
+	direction: rtl;
+	text-align: center;
+
+}
+.text-view-apps strong{font-weight: 100;text-align: center;display: block}
+.text-view-apps a{
+	width: 30%;
+	padding-top:5%;
+	padding-bottom:5%;
+	float: right;
+	margin: 1.5%;
+	color: #000000;
+	border-radius: 20px;
+	background: #ffffff;
+	font-size: 15px;
+}
+.apps img {position: absolute;width: 400px;}
+.apps img:nth-child(2){right: 80px;
+	top:30px;}
+.apps img:nth-child(3){right: 30px;
+	top:110px;}
+
+
+
+footer {
+	display: block;
+	width: 100%;
+	float: right;
+	background: #ffffff;
+	height: 10vh;
+	padding: 50px;
+}
+.social {
+	width: 200px;
+	display: block;
+
+	margin: auto;}
+.social a {color: #838383;float: left;width: 30px;
+	margin-right: 10px;
+	text-align: center}
+.fo-link{width: 350px;margin-top: 60px;}
+.fo-link a{font-family: Sans !important;
+	float: right;
+	width: 33.33333333%;
+	margin: 0}
+.fo-info{width: 100%;float: left;}
+.fo-info div{font-family: Sans ;float: right;width: 33%;text-align: center;color: #838383;margin-top: 100px}
+.co-seeb{width: 100%;padding: 10px;float: left;margin-top: 40px;}
+.co-seeb a {display: block;margin: auto;
+	font-family: Sans;
+	width:100%}
+.co-seeb a strong {color: #7dd450}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+	header div.title {
+		font-size: 30px;
+	}
+	.sub-title{
+		font-size: 18px;
+	}
+}
+@media only screen and (max-width: 1200px) {
+	.all-seen img {width: 200px}
+	.all-seen img:nth-child(2){
+		right: 100px;
+		top:60px;
+	}
+	.all-seen img:nth-child(3){
+		right: 200px;
+		top:160px;
+	}.place .text-view {
+
+		 text-align: center;
+		 right: 0;
+		 width: 100%}
+	.place {height: 50vh}
+	.place img{
+		display: none}
+
+}
+@media only screen and (max-width: 830px) {
+	.all-seen  {
+		height: 120vh;
+	}
+	.all-seen .text-view  {
+		top:0%;
+		left: 0%;
+		text-align: center;
+		width: 100%}
+
+	.all-seen img:nth-child(2){
+		right: 50%;
+		top:320px !important;
+	}
+	.all-seen img:nth-child(3){
+		right: 10px;
+		top:320px !important ;
+	}
+	.tickeet-code .text-view {
+		top:30px;
+		right: 0%;
+		width: 100%;
+	}
+
+	.tickeet-code img:nth-child(2){
+		width: 200px;
+	}
+	.tickeet-code img:nth-child(3){
+		width: 300px;
+
+	}
+	.apps {padding: 0;height: 70vh}
+	.apps img{display: none}
+	.text-view-apps {width: 100%;}
+	.place .text-view {right: 0px !important;
+		top:0px !important;
+		width: 100% !important;}
+
+	.fo-info div{width: 100%}
+}
+.appstore {
+	background: url("/img/landing/Appstore.png") !important;
+	background-size: 100% 100% !important;
+}
+.bazar{	background: url("/img/landing/bazar.png") !important;
+	background-size: 100% 100% !important;}
+.google{	background: url("/img/landing/GooglePlay.png") !important;
+	background-size: 100% 100% !important;}
+
+
+
+.small-header {display: block;
+	width: 100%;
+	height:  auto;
+	background: #ffffff;
+	float: right;
+	padding: 20px;
+}
+.small-header img {float: right;height: 70px;}
+.small-header .app-link {float: left;
+	height: 100%;}
+.cover {width: 100%;
+	height: 300px}
+.content {padding: 130px;
+	font-family: Sans;
+	direction: rtl;
+	text-align: justify}
+
+.content .title , .date{font-size: 50px;
+	font-weight: bold;
+	width: 70%;
+	float: right}
+
+.date {float: left;
+
+	width: 30%;}
+
+.faq {
+	width: 100%;
+	padding: 20px;
+
+}
+.faq-tit {width: 100%;
+	font-weight: bold;
+	position: relative;
+	font-size: 30px;
+}
+.faq-tit:before {content: "";
+	padding:5px;
+	border-radius: 100%;
+	background: #F58634;
+	position: absolute;
+	top: 20px;
+	right: -20px;}
+
+.faq-phone {
+	display: block;
+	width: 100%;
+	padding: 100px;
+	float: right;
+	background: #161b25}
+
+.faq-item{float: right;
+	width: 100%;
+	height:auto;
+	overflow: hidden;
+	background: #232830;
+	border-radius: 10px;
+	transition: .4s linear;
+}
+
+.faq-ic {float: right;
+	width: 20%;
+	height: 100%;
+	padding: 20px;
+	background: #2d333b;
+}
+.faq-ic img{margin: auto;display: block}
+
+.faq-it-tit {width: 80%;
+	padding: 35px;
+	color: #ffffff;
+	font-family: Sans;
+	font-size: 45px;
+	direction: rtl;
+	height: 160px;
+}
+
+.it-content {color: #ffffff;
+
+	width: 100%;
+	font-family: Sans;
+	display: none}
+
+.nafise {float: right;
+	width: 20%;
+	height: 100%;
+	padding: 20px;
+	background: #2d333b;}
+
+.akhlaqpoor {width: 70%;}
+
+
+
+
+
+
+
+
+
+
+
